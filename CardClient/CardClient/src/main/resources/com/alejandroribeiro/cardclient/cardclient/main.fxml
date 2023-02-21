@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #332940; -fx-border-color: #bb86fc;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alejandroribeiro.cardclient.cardclient.Controller">
+   <children>
+      <Label layoutX="74.0" layoutY="31.0" style="-fx-text-fill: #bb86fc; -fx-border-color: #bb86fc; -fx-border-radius: 9; -fx-font-weight: bold;" text="Address">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="addressField" layoutX="151.0" layoutY="33.0" style="-fx-background-color: #bb86fc; -fx-border-color: #bb86fc; -fx-border-radius: 5; -fx-font-weight: bold;" text="localhost" />
+      <Label layoutX="323.0" layoutY="31.0" style="-fx-text-fill: #bb86fc; -fx-border-color: #bb86fc; -fx-border-radius: 9; -fx-font-weight: bold;" text="Port">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="portField" layoutX="385.0" layoutY="32.0" prefHeight="27.0" prefWidth="88.0" style="-fx-background-color: #bb86fc; -fx-border-color: #bb86fc; -fx-border-radius: 5; -fx-font-weight: bold;" text="5000" />
+      <Button fx:id="connectButton" layoutX="498.0" layoutY="33.0" mnemonicParsing="false" onAction="#connectToServer" style="-fx-background-color: #bb86fc; -fx-font-weight: bold;" text="CONNECT" />
+      <ListView fx:id="cardsListGame" layoutX="14.0" layoutY="66.0" prefHeight="420.0" prefWidth="200.0" style="-fx-background-color: #bb86fc; -fx-border-color: #332940; -fx-background-radius: 8; -fx-border-radius: 8;" />
+      <Button fx:id="yesButton" layoutX="350.0" layoutY="250.0" mnemonicParsing="false" onAction="#moreCards" style="-fx-background-color: #bb86fc; -fx-font-weight: bold;" text="YES" visible="false" />
+      <Button fx:id="noButton" layoutX="400.0" layoutY="250.0" mnemonicParsing="false" onAction="#foldAndFinish" style="-fx-background-color: #bb86fc; -fx-font-weight: bold;" text="NO" visible="false" />
+      <Label fx:id="lblScore" layoutX="360.0" layoutY="300.0" style="-fx-text-fill: #bb86fc; -fx-border-color: #bb86fc; -fx-border-radius: 9; -fx-font-weight: bold;" text="SCORE" visible="false">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="yourCardLbl" layoutX="310.0" layoutY="150.0" style="-fx-text-fill: #bb86fc; -fx-border-color: #bb86fc; -fx-border-radius: 9; -fx-font-weight: bold;" text="WELCOME TO 7.5">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMoreCards" layoutX="260.0" layoutY="250.0" style="-fx-text-fill: #bb86fc; -fx-border-color: #bb86fc; -fx-border-radius: 9; -fx-font-weight: bold;" text="More cards?" visible="false">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label layoutX="370.0" layoutY="450.0" style="-fx-text-fill: #bb86fc; -fx-border-color: #bb86fc; -fx-border-radius: 9; -fx-font-weight: bold;" text="Made by Alejandro Ribeiro">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
