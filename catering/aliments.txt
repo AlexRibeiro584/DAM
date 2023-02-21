@@ -1,0 +1,7 @@
+Steak;Pork steak;Weekly;false;false;false;false;120.0;0.0;200.0
+Bread;Wheat bread;Daily;true;false;false;false;20.0;100.0;0.0
+Egg;Eggs;Weekly;false;false;false;true;30.0;0.0;30.0
+Greek Yoghurt;Fatty yoghurt from Greece;2;false;true;false;false;200.0;200.0;0.0;
+Banana;cool fruit;2;false;false;false;false;50.0;0.0;0.0;
+Tomato;good;2;false;false;false;false;2.0;2.0;2.0;
+berros;hierbas;daily;false;true;false;false;100.0;200.0;0.0;

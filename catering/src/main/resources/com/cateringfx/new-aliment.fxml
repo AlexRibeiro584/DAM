@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cateringfx.NewAliment">
+   <children>
+      <Label layoutX="205.0" layoutY="21.0" text="NEW ALIMENT" textFill="#1e00ff">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="320.0" layoutY="98.0" prefHeight="25.0" prefWidth="260.0" />
+      <TextField fx:id="txtDescription" layoutX="320.0" layoutY="135.0" prefHeight="25.0" prefWidth="260.0" />
+      <TextField fx:id="txtFrequency" layoutX="320.0" layoutY="174.0" prefHeight="25.0" prefWidth="260.0" />
+      <TextField fx:id="txtCalories" layoutX="320.0" layoutY="213.0" />
+      <TextField fx:id="txtCarbo" layoutX="320.0" layoutY="253.0" />
+      <TextField fx:id="txtFat" layoutX="320.0" layoutY="295.0" />
+      <Label layoutX="157.0" layoutY="95.0" text="Name">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="132.0" text="Description">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="171.0" text="Frequency">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="210.0" text="Calories">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="250.0" prefHeight="25.0" prefWidth="136.0" text="Carbohydrates">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="292.0" text="Fat">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkMilk" layoutX="46.0" layoutY="344.0" mnemonicParsing="false" text="Milk">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkNuts" layoutX="147.0" layoutY="344.0" mnemonicParsing="false" text="Nuts">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkEgg" layoutX="320.0" layoutY="344.0" mnemonicParsing="false" text="Egg">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkGluten" layoutX="417.0" layoutY="344.0" mnemonicParsing="false" text="Gluten">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="268.0" layoutY="392.0" mnemonicParsing="false" onAction="#saveNewAliment" text="Save" textFill="#001aff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

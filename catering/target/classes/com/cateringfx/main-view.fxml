@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cateringfx.MainController">
+   <children>
+      <Label alignment="CENTER" layoutX="198.0" layoutY="33.0" prefHeight="36.0" prefWidth="203.0" text="MENU DESIGNER" textFill="#0011ff">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="70.0" text="Date:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="212.0" layoutY="67.0" promptText="Select the date..." />
+      <CheckBox fx:id="milkCheck" layoutX="277.0" layoutY="105.0" mnemonicParsing="false" onAction="#milkChecked" text="Milk" />
+      <CheckBox fx:id="nutsCheck" layoutX="354.0" layoutY="105.0" mnemonicParsing="false" onAction="#nutsChecked" text="Nuts" />
+      <CheckBox fx:id="glutenCheck" layoutX="481.0" layoutY="105.0" mnemonicParsing="false" onAction="#glutenChecked" text="Gluten" />
+      <CheckBox fx:id="eggCheck" layoutX="420.0" layoutY="105.0" mnemonicParsing="false" onAction="#eggChecked" text="Egg" />
+      <TextField layoutX="88.0" layoutY="101.0" promptText="Search..." />
+      <Label layoutX="27.0" layoutY="105.0" text="Search Text" />
+      <TableView fx:id="leftTableView" editable="true" layoutX="27.0" layoutY="141.0" prefHeight="200.0" prefWidth="225.0">
+        <columns>
+          <TableColumn fx:id="leftTableName" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="tableKcal" prefWidth="35.20001983642578" text="kCal" />
+            <TableColumn fx:id="tableCarbs" prefWidth="75.0" text="Carbs" />
+            <TableColumn fx:id="tableFats" prefWidth="75.0" text="Fats" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="274.0" layoutY="189.0" mnemonicParsing="false" onAction="#addAlimentToTheMenu" prefHeight="35.0" prefWidth="46.0" text="&gt;&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="274.0" layoutY="241.0" mnemonicParsing="false" onAction="#deleteAlimentFromTheMenu" prefHeight="36.0" prefWidth="46.0" text="X" textFill="RED" />
+      <TableView fx:id="tableViewRight" layoutX="354.0" layoutY="141.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="columnMenuName" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="columnMenuDesc" prefWidth="75.0" text="Description" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <VBox alignment="CENTER" layoutX="27.0" layoutY="360.0" prefHeight="142.0" prefWidth="161.0" spacing="30.0" style="-fx-border-color: BLACK;">
+         <children>
+            <Button fx:id="newalimbtn" mnemonicParsing="false" onAction="#newAlimentClick" text="New Aliment">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" text="New Dish">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Button layoutX="212.0" layoutY="379.0" mnemonicParsing="false" onAction="#saveNewMenu" prefWidth="112.0" text="Save Menu" textFill="#0015ff">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <VBox alignment="TOP_CENTER" layoutX="353.0" layoutY="353.0" prefHeight="160.0" prefWidth="203.0" style="-fx-border-color: BLACK;">
+         <children>
+            <Label text="Nutritional Limits" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="24.0" prefWidth="202.0">
+               <children>
+                  <Label text="Calories">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblCalories" text="0">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="38.0" prefHeight="24.0" prefWidth="202.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="123.0" text="Carbohydrates">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="carbsLimitLbl" text="0">
+                     <HBox.margin>
+                        <Insets left="37.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="62.0" prefHeight="24.0" prefWidth="202.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="123.0" text="Fat">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="fatLimitLbl" text="0">
+                     <HBox.margin>
+                        <Insets left="37.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="setLimitsBtn" mnemonicParsing="false" onAction="#setLimitsClick" text="Set Limits">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children></VBox>
+   </children>
+</Pane>
