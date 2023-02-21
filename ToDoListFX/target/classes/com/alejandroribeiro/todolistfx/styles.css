@@ -1,0 +1,14 @@
+.combo-box .list-cell{
+    -fx-background-color: #4FB9AF;
+    -fx-text-fill: #332940;
+}
+.list-view .list-cell{
+    -fx-background-color: #332940;
+    -fx-text-fill: #4FB9AF;
+}
+.list-view .list-cell:filled:selected {
+  -fx-background-color:#4fb9af;
+  -fx-text-fill:#332940;
+  -fx-font-weight:bold;
+  }
+
